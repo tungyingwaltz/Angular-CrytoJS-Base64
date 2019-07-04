@@ -12,6 +12,7 @@ export class AppComponent {
   text2: string;
   text3: string;
   text4: string;
+  
   encrypt() {
     var words = CryptoJS.enc.Utf8.parse(this.text1);
     this.text2 = CryptoJS.enc.Base64.stringify(words);
